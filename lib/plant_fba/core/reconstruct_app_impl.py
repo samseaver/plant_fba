@@ -406,7 +406,7 @@ def main():
 	# Load test data
 	test_data_root = os.path.join("..","..","..","test","data")
 
-	genome_path = os.path.join(test_data_root,"Phytozome_Genomes_Athaliana_TAIR10.Annotated.json")
+	genome_path = os.path.join(test_data_root,"Phytozome_Genomes_Athaliana_TAIR10.Annotated.Truncated.json")
 	genome_fh = open(genome_path)
 	genome_obj = json.load(genome_fh)
 
@@ -422,27 +422,22 @@ def main():
 	reconstruct_app = ReconstructAppImpl()
 	reconstruct_app._set_objects({'genome':genome_obj,'template':template_obj})
 
-	obj_name='test'
+	obj_name = 'test_model'
 	input_params={'id':obj_name,'name':obj_name,'cpts':compartments}
 	metabolism_obj = reconstruct_app.reconstruct_metabolism(input_params)
-
-	msd_biochem_path = "/Users/seaver/Projects/ModelSEEDDatabase/Biochemistry/"
-	search_path = os.path.join(msd_biochem_path,"compound_*.json")
-	cpds_dict = dict()
-	for compounds_file in sorted(glob.glob(search_path)):
-		with open(compounds_file) as json_file_handle:
-			cpds_list = json.load(json_file_handle)
-			for cpd_obj in cpds_list:
-				cpds_dict[cpd_obj['id']]=cpd_obj
-
+	
+	biochem_path = os.path.join(test_data_root,"MS_Cpds_Attrs.json")
+	biochem_fh = open(biochem_path)
+	biochem_obj = json.load(biochem_fh)
+        
 	for mdlcpd in metabolism_obj['modelcompounds']:
 		base_cpd_id = mdlcpd['id'].split('_')[0]
-		if(base_cpd_id not in cpds_dict):
+		if(base_cpd_id not in biochem_obj):
 			continue
 
-		mdlcpd['name'] = cpds_dict[base_cpd_id]['name']
-		mdlcpd['charge'] = float(cpds_dict[base_cpd_id]['charge'])
-		mdlcpd['formula'] = cpds_dict[base_cpd_id]['formula']
+		mdlcpd['name'] = biochem_obj[base_cpd_id]['name']
+		mdlcpd['charge'] = float(biochem_obj[base_cpd_id]['charge'])
+		mdlcpd['formula'] = biochem_obj[base_cpd_id]['formula']
 
 		if(mdlcpd['formula'] is None):
 			mdlcpd['formula'] = ""

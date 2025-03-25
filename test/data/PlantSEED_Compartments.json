@@ -1,0 +1,283 @@
+{
+  "e": {
+    "id": "e",
+    "name": "Extracellular",
+    "abbrev": "extracellular",
+    "aliases": [
+      "extracellular",
+      "CCI-EXTRACELLULAR-PL",
+      "CCO-MEMBRANE",
+      "CCI-PM-PLANT-PL"
+    ],
+    "ph": 7,
+    "hierarchy": 0
+  },
+  "w": {
+    "id": "w",
+    "name": "Cell Wall",
+    "abbrev": "cellwall",
+    "aliases": [
+      "plasma membrane",
+      "CCO-PLASTID",
+      "CCI-CHLOROPLAST-PL",
+      "CCO-PLASTID-STR",
+      "CCI-CHLOR-STR-PL",
+      "cell wall"
+    ],
+    "ph": 7,
+    "hierarchy": 1
+  },
+  "c": {
+    "id": "c",
+    "name": "Cytosol",
+    "abbrev": "cytosol",
+    "aliases": [
+      "cytoskeleton",
+      "cytosol",
+      "oil bodies",
+      "CCI-CYTOSOL-PL",
+      "CCO-CYTOPLASM"
+    ],
+    "ph": 7,
+    "hierarchy": 3
+  },
+  "g": {
+    "id": "g",
+    "name": "Golgi",
+    "abbrev": "golgi",
+    "aliases": [
+      "golgi",
+      "CCI-GOLGI-PL",
+      "Golgi body"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "r": {
+    "id": "r",
+    "name": "Endoplasmic Reticulum",
+    "abbrev": "endoplasm",
+    "aliases": [
+      "endoplasmic reticulum",
+      "ER",
+      "oil bodies",
+      "CCO-ER",
+      "CCO-ER-MEM",
+      "endoplasm",
+      "E.R.",
+      "CCO-ER-LUM"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "f": {
+    "id": "f",
+    "name": "ER lumen",
+    "abbrev": "erlumen",
+    "aliases": [
+      "endoplasmic reticulum",
+      "CCO-ER-LUM",
+      "CCO-ER-GOLGI-VES",
+      "null"
+    ],
+    "ph": 7,
+    "hierarchy": 5
+  },
+  "n": {
+    "id": "n",
+    "name": "Nucleus",
+    "abbrev": "nucleus",
+    "aliases": [
+      "nucleus",
+      "CCI-NUCLEUS-PL"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "v": {
+    "id": "v",
+    "name": "Vacuole",
+    "abbrev": "vacuole",
+    "aliases": [
+      "vacuole",
+      "vacuole-tonoplast",
+      "CCO-VACUOLE",
+      "CCO-VAC-MEM"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "x": {
+    "id": "x",
+    "name": "Peroxisome",
+    "abbrev": "peroxisome",
+    "aliases": [
+      "peroxisome",
+      "CCI-PEROXISOME-PL"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "s": {
+    "id": "s",
+    "name": "Plastid Outer Membrane",
+    "abbrev": "plastidouter",
+    "aliases": [
+      "envelope-outer",
+      "envelope-outer-integral",
+      "plastidial outer membrane",
+      "envelope outer membrane"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "t": {
+    "id": "t",
+    "name": "Plastid Intermembrane Space",
+    "abbrev": "plastidinter",
+    "aliases": [
+      "envelope",
+      "envelope-intermembranespace",
+      "CCO-CHLOR-MEM",
+      "CCO-PLASTID-MEM",
+      "CCO-PLASTID-ENV",
+      "CCI-CHLOR-ENV-PL",
+      "Plastidial Intermembrane Space"
+    ],
+    "ph": 7,
+    "hierarchy": 5
+  },
+  "u": {
+    "id": "u",
+    "name": "Plastid Inner Membrane",
+    "abbrev": "plastidinner",
+    "aliases": [
+      "envelope-inner",
+      "envelope-inner-integral",
+      "envelope-inner-peripheral-stroma-side",
+      "plastidial inner membrane",
+      "envelope inner membrane"
+    ],
+    "ph": 7,
+    "hierarchy": 6
+  },
+  "d": {
+    "id": "d",
+    "name": "Stroma",
+    "abbrev": "plastid",
+    "aliases": [
+      "plastid",
+      "plastid nucleoid",
+      "plastid ribosome",
+      "plastid stroma",
+      "CCO-PLASTID",
+      "CCI-CHLOROPLAST-PL",
+      "CCO-PLASTID-STR",
+      "CCI-CHLOR-STR-PL",
+      "plastidial stroma"
+    ],
+    "ph": 7,
+    "hierarchy": 7
+  },
+  "y": {
+    "id": "y",
+    "name": "Thylakoid",
+    "abbrev": "thylakoid",
+    "aliases": [
+      "plastoglobules",
+      "thylakoid-integral",
+      "thylakoid-peripheral-lumenal-side",
+      "thylakoid-peripheral-stromal-side",
+      "CCO-CHL-THY-MEM",
+      "Thylakoid"
+    ],
+    "ph": 7,
+    "hierarchy": 8
+  },
+  "z": {
+    "id": "z",
+    "name": "Thylakoid Lumen",
+    "abbrev": "lumen",
+    "aliases": [
+      "CCO-CHLOR-THY"
+    ],
+    "ph": 7,
+    "hierarchy": 9
+  },
+  "i": {
+    "id": "i",
+    "name": "Mitochondria Outer Membrane",
+    "abbrev": "mitoouter",
+    "aliases": [
+      "mitochondrial outer membrane"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "j": {
+    "id": "j",
+    "name": "Mitochondria Intermembrane Space",
+    "abbrev": "mitointer",
+    "aliases": [
+      "CCO-MIT-MEM",
+      "mitochondrial Intermembrane Space"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "k": {
+    "id": "k",
+    "name": "Mitochondria Inner Membrane",
+    "abbrev": "mitoinner",
+    "aliases": [
+      "CCI-MIT-IMEM-PL",
+      "mitochondrial inner membrane"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "m": {
+    "id": "m",
+    "name": "Matrix",
+    "abbrev": "mitochondria",
+    "aliases": [
+      "mitochondrion",
+      "mitochondria",
+      "CCI-MIT-PL",
+      "CCI-MIT-LUM-PL",
+      "mitochondrial matrix"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "a": {
+    "id": "a",
+    "name": "Carboxysome",
+    "abbrev": "carboxysome",
+    "aliases": [
+      "null"
+    ],
+    "ph": 7,
+    "hierarchy": 4
+  },
+  "b": {
+    "id": "b",
+    "name": "Plasma Membrane",
+    "abbrev": "plasmamembrane",
+    "aliases": [
+      "Plasma membrane"
+    ],
+    "ph": 7,
+    "hierarchy": 2
+  },
+  "l": {
+    "id": "l",
+    "name": "Lysosome",
+    "abbrev": "lysosome",
+    "aliases": [
+      "null"
+    ],
+    "ph": 2,
+    "hierarchy": 4
+  }
+}
