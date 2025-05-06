@@ -109,7 +109,7 @@ class ReconstructAppImpl:
 					# of plant genomes, I only use the forward slash to separate
 					# roles
 					# roles = re.split("\s*;\s+|\s+[\@\/]\s+", function)
-					roles = re.split("\s+/\s+",function)
+					roles = re.split("\\s+/\\s+",function)
 					for role in roles:
 						
 						searchrole = self._convert_search_role(role)
@@ -406,7 +406,8 @@ def main():
 	# Load test data
 	test_data_root = os.path.join("..","..","..","test","data")
 
-	genome_path = os.path.join(test_data_root,"Phytozome_Genomes_Athaliana_TAIR10.Annotated.Truncated.json")
+	#genome_path = os.path.join(test_data_root,"Phytozome_Genomes_Athaliana_TAIR10.Annotated.Truncated.json")
+	genome_path = os.path.join(test_data_root,"Tarvense-MN106-annotated.json")
 	genome_fh = open(genome_path)
 	genome_obj = json.load(genome_fh)
 
